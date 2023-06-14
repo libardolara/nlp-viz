@@ -1,0 +1,64 @@
+source,target,weight,source_name,target_name
+0,1,14,Deep learning,Artificial intelligence
+0,2,15,Deep learning,Machine learning
+0,7,1,Deep learning,Feature learning
+0,3,1,Deep learning,Ethics
+0,33,1,Deep learning,Inference
+1,2,14,Artificial intelligence,Machine learning
+1,33,1,Artificial intelligence,Inference
+1,41,1,Artificial intelligence,Decision tree
+2,7,1,Machine learning,Feature learning
+2,3,1,Machine learning,Ethics
+2,41,1,Machine learning,Decision tree
+4,5,1,Dave Barker,The Uniques (Jamaican group)
+4,6,1,Dave Barker,Lloyd Parks
+5,6,1,The Uniques (Jamaican group),Lloyd Parks
+8,9,1,Discrimination,Racism
+8,10,1,Discrimination,Systemic bias
+9,10,1,Racism,Systemic bias
+11,12,1,Das Model,Learning
+11,13,6,Das Model,Movement for Democracy in Liberia
+11,14,1,Das Model,Scientific modelling
+11,21,1,Das Model,Prodrug
+11,22,1,Das Model,Conceptual model
+11,26,1,Das Model,Adversarial system
+11,27,1,Das Model,Weakness
+11,32,1,Das Model,Tool
+12,13,1,Learning,Movement for Democracy in Liberia
+13,14,1,Movement for Democracy in Liberia,Scientific modelling
+13,21,1,Movement for Democracy in Liberia,Prodrug
+13,22,2,Movement for Democracy in Liberia,Conceptual model
+13,26,1,Movement for Democracy in Liberia,Adversarial system
+13,27,1,Movement for Democracy in Liberia,Weakness
+13,32,1,Movement for Democracy in Liberia,Tool
+15,16,1,Thought,Knowledge
+15,17,1,Thought,Aptitude
+15,30,1,Thought,Existentialism
+15,31,1,Thought,Person
+16,17,1,Knowledge,Aptitude
+16,18,1,Knowledge,Reason
+16,34,1,Knowledge,Logic
+18,19,1,Reason,Model
+18,20,1,Reason,Design
+18,34,1,Reason,Logic
+19,20,1,Model,Design
+19,28,1,Model,Ensemble learning
+19,29,1,Model,Decision-making
+19,40,1,Model,Causality
+22,32,1,Conceptual model,Tool
+23,24,1,Page layout,Baseline (typography)
+23,25,1,Page layout,Sentence spacing
+24,25,1,Baseline (typography),Sentence spacing
+28,29,1,Ensemble learning,Decision-making
+30,31,1,Existentialism,Person
+34,42,1,Logic,Fuzzy logic
+34,43,1,Logic,Many-valued logic
+35,36,1,Expert system,Mycin
+35,37,1,Expert system,Knowledge acquisition
+36,37,1,Mycin,Knowledge acquisition
+38,39,1,System,Definition
+42,43,1,Fuzzy logic,Many-valued logic
+44,44,0,Utility,Utility
+45,46,1,Use case,Economics
+45,47,1,Use case,Test case
+46,47,1,Economics,Test case
