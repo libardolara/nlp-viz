@@ -13,7 +13,7 @@ Although the focus of the project is not to develop NLP models, several strategi
 
 The text analysis proposed started by tokenizing the conversation into its sentences. The conversation has 939 words and was divided into 46 sentences. This technique was implemented through the library NLTK.
 
-![](sentences.png)
+![](images/sentences.png)
 
 All the following analyses were performed on each sentence separately. The concepts classification returns high-level concepts in the content. For example, a sentence about deep learning might return the concept, "Artificial Intelligence" although the term is not mentioned. This technique was implemented using the IBM pre-trained model in their Natural Language Understanding API The top 3 concepts were extracted per each sentence and then only those with a relevance of 0.5 were considered. The 48 concepts extracted then were paired as several concepts co-exist in the same sentence. The idea was to build relationships between concepts that appear in the same sentence.
 
@@ -30,7 +30,7 @@ This section describes the visualizations developed and the justification for th
 
 Figure 2 shows a visualization proposed to understand the relationship between concepts and how often they appear in the conversation. The chart is a network graph on a circular layout displaying each node as one of the 48 concepts. The width of the edges of the graph is mapping the count of appearances of the relationship between concepts. The user can hover over the nodes to highlight the edges connected to that node in addition to the name of the concept. The user can also select the node to lock down the highlight of the connections. In addition, other tools were added to the graph, like zooming, and panning. This visualization was implemented using Networkx and Bokeh.
 
-![](graph.png)
+![](images/graph.png)
 
 This visualization is relevant to understand first what concepts are being discussed in the sentences as well as how they are related. Outliers are easily spotted on both spectrums, for example, the relations between deep learning, machine learning, and artificial intelligence are easily spotted due to the width of the edges. As well as the fact that there is a concept without relation to other concepts. The graph shape helps human perception to create mental images of language concepts, establishing a base of understanding of the concepts being discussed.
 
@@ -38,7 +38,7 @@ This visualization is relevant to understand first what concepts are being discu
 
 Figure 3 shows a heatmap chart to show the relationship between concepts and how often they appear in the conversation. The visualization has 48 concepts on the x-axis and y-axis. The color of the table cell maps the number of co-appearances of the concepts. The darker the color means that both concepts appear more often in the sentences. The user can hover over the cells to show a tooltip with the name of the related concepts and the count of appearances. In addition, other tools were added to the graph, like zooming, and panning. This visualization was implemented using Bokeh.
 
-![](Heatmap.png)
+![](images/Heatmap.png)
 
 This visualization is relevant to understand first what concepts are being discussed in the sentences as well as how they are related. Compared to the network graph in Figure 2, the user has available the scale to understand how many appearances the two concepts have. Heavily tied concepts are easily spotted, for example, the relations between deep learning, machine learning, and artificial intelligence are easily spotted due to the width of the edges. The diagonal of the matrix gives an understanding of how many times each individual concept appears in the sentences.
 
@@ -46,7 +46,7 @@ This visualization is relevant to understand first what concepts are being discu
 
 Figure 4 shows a Treemap used to display the breakdown of categories. The purpose of the analysis is to understand and compare the categories present in the sentences of the conversation. Users can hover over a node to get details on the number of appearances and count of appearances. In addition, the user can use a range slider to filter the nodes depending on the count. The Treemap was implemented using Plotly and the slider using ipywidgets.
 
-![](Treemap.png)
+![](images/Treemap.png)
 
 A Treemap is a great tool for comparing quantity and understanding hierarchical data. The order directs the user’s attention to read from left to right the information required. The tree nature helps to understand the hierarchies of categories involved in the conversation.
 
@@ -54,7 +54,7 @@ A Treemap is a great tool for comparing quantity and understanding hierarchical 
 
 Figure 5 uses a Word Cloud to display word frequency in the conversation. This is one of the most common yet powerful visualizations for text analysis. The user can also filter the sentences used to calculate the word frequency through a multiple-select widget. As the user selects between any combination of positive, neutral, and negative the word cloud will update to reflect the word frequency. This visualization was implemented using Matplotlib and ipywidgets.
 
-![](WordCloud.png)
+![](images/WordCloud.png)
 
 Word frequency is usually an important analysis used in text analytics. Word cloud provides an easy-to-understand and comparable method to display word frequency. For example, negative sentences seem to discuss decision-making while positive sentences focus on models, deep and learning.
 
@@ -62,7 +62,7 @@ Word frequency is usually an important analysis used in text analytics. Word clo
 
 Figure 6 shows a bar chart with the keyword frequency found in the sentences. The user can hover over the bars to get the exact information of the frequency count for the keyword. In addition, the user can use the slider to filter all the keywords, showing only those with less than or equal to the slider value. This visualization was implemented using Bokeh.
 
-![](BarChart.png)
+![](images/BarChart.png)
 
 ## Conclusion
 
